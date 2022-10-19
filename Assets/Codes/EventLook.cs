@@ -6,8 +6,6 @@ public class EventLook : MonoBehaviour
 {
     public AudioSource sound;
     public GameObject toEnable;
-    public GameObject toDisable;
-    public GameObject toDisable2;
     public Rigidbody rdb;
     public Vector3 force;
 
@@ -23,15 +21,6 @@ public class EventLook : MonoBehaviour
         if (toEnable)
         {
             toEnable.SetActive(true);
-        }
-        //desabilita gameobjec selecionado
-        if (toDisable)
-        {
-            toDisable.SetActive(false);
-        }
-        if (toDisable2)
-        {
-            toDisable2.SetActive(false);
         }
         //adiciona uma força no objeto selecionado
         if (rdb)
